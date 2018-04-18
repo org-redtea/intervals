@@ -1,6 +1,6 @@
 {
   "name": "@redtea/intervals",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utilities for operate over intervals",
   "main": "commonjs/index.js",
   "publishConfig": {
