@@ -1,13 +1,16 @@
 # Intervals
 
+[![npm](https://img.shields.io/npm/v/@redtea/intervals.svg)](https://www.npmjs.com/package/@redtea/intervals)
+[![Travis](https://img.shields.io/travis/org-redtea/intervals.svg)](https://travis-ci.org/org-redtea/intervals)
+
 Utilities for operate over intervals
 
-# Install
+## Install
 ```bash
 $ npm install --save @redtea/intervals
 ```
 
-# Usage
+## Usage
 ```JS
 import { includes, merge, clip, select } from "@redtea/intervals"
 // or
@@ -31,23 +34,22 @@ select([[1,2]], 1, 2) // [[1, 2]]
 select([[0,2],[1,3]], 1, 2) // [[0, 2], [1, 3]]
 ```
 
-# Utils
+## Utils
 
-
-### includes(*number*: `number`, *start*: `number`, *end*: `number`): `boolean`**
+#### includes(*number*: `number`, *start*: `number`, *end*: `number`): `boolean`**
 
 Test if *number* in interval [*start*, *end*] and return result.
 
-### merge(*intervals*: `[number, number][]`, *maxDistance*: `number` = 0): `[number, number][]`**
+#### merge(*intervals*: `[number, number][]`, *maxDistance*: `number` = 0): `[number, number][]`**
 
 Merge *intervals* that intersect or where distance between intervals less then *maxDistance*. Always return new list.
 
 
-### clip(*intervals*: `[number, number][]`, *start*: `number`, *end*: `number`): `[number, number][]`**
+#### clip(*intervals*: `[number, number][]`, *start*: `number`, *end*: `number`): `[number, number][]`**
 
 Exclude intervals *intervals* from interval [*start*, *end*]. Always return new list.
 
 
-### select(*intervals*: `[number, number][]`, *start*: `number`, *end*: `number`): `[number, number][]`**
+#### select(*intervals*: `[number, number][]`, *start*: `number`, *end*: `number`): `[number, number][]`**
 
 Select all intervals that intersect or inside of interval [*start*, *end*]. Always return new list.
