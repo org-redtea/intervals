@@ -1,3 +1,4 @@
 import { includes } from "./lib/includes";
 import { merge } from "./lib/merge";
-export { merge, includes };
+import { clip } from "./lib/clip";
+export { merge, includes, clip };
