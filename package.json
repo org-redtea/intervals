@@ -1,0 +1,65 @@
+{
+  "name": "@redtea/intervals",
+  "version": "0.0.1",
+  "description": "Utilities for operate over intervals",
+  "main": "commonjs/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "module": "es/index.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "commonjs/",
+    "es/",
+    "esnext/",
+    "types/*"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run ts && npm run rollup",
+    "ts": "tsc -d --declarationDir types/",
+    "rollup": "rollup -c",
+    "clean": "rm -rf esnext/ es/ commonjs/ types/",
+    "test": "jest --coverage"
+  },
+  "author": "Kirill Horoshilov <mr.hokid@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/org-redtea/intervals.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/org-redtea/intervals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/org-redtea/intervals/issues"
+  },
+  "keywords": [
+    "interval",
+    "intervals",
+    "lib",
+    "utils",
+    "utilites",
+    "math",
+    "ranges",
+    "numbers",
+    "merge",
+    "clip",
+    "includes",
+    "select",
+    "js"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "rollup": "^0.58.0",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-uglify": "^3.0.0",
+    "ts-jest": "^22.4.3",
+    "typescript": "^2.8.1"
+  }
+}
